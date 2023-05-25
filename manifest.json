@@ -1,0 +1,31 @@
+{
+    "name": "Custom Map Visualization",
+    "description": "Custom visualization for displaying bubble markers and filled areas on a map.",
+    "icon": "gs://multi-map-layer/D-VISUALIZE.png",
+    "script": "gs://multi-map-layer/multi-map-layers.js",
+    "enableNativeVisualizations": false,
+    "support": {
+      "communityVisualizations": true
+    },
+    "data": {
+      "multiple": {
+        "dimensions": {
+          "fieldName": "zip_code",
+          "group": "1"
+        },
+        "metrics": [
+          {
+            "fieldName": "record_count",
+            "group": "2"
+          }
+        ]
+      }
+    },
+    "predefinedConfig": {
+      "version": "1.0",
+      "dataType": "table",
+      "style": {},
+      "placement": "body"
+    }
+  }
+  
